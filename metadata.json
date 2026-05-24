@@ -1,0 +1,6 @@
+{
+  "name": "Balance Studio",
+  "description": "Эстетика, идеальная форма и стойкое покрытие от мастера Анастасии в Горячем Ключе.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

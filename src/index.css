@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Yeseva One", serif;
+  --font-title: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-brand-bg: #faf6f0;
+  --color-brand-accent: #e89a8e;
+  --color-brand-accent-hover: #e58f82;
+  --color-brand-secondary: #f7dcd7;
+  --color-brand-text: #2c2523;
+}
+
+@layer base {
+  body {
+    background-color: #faf6f0;
+    color: #2c2523;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* 2026 Scroll-driven transition variables and utility styles */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  will-change: transform, opacity;
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96) translateY(12px);
+  will-change: transform, opacity;
+  transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1), transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Micro-delay utilities up to 12 elements for grid staggers */
+.delay-0 { transition-delay: 0ms; }
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+.delay-700 { transition-delay: 700ms; }
